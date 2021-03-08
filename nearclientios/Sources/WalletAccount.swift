@@ -47,7 +47,9 @@ public protocol ExternalAuthService {
   func openURL(_ url: URL) -> Bool
 }
 
+#if canImport(UIKit)
 extension UIApplication: ExternalAuthService {}
+#endif
 
 public struct WalletAccount {
   private let _walletBaseUrl: String
@@ -59,6 +61,7 @@ public struct WalletAccount {
   private let authService: ExternalAuthService
 }
 
+#if canImport(UIKit)
 public extension WalletAccount {
   init(near: Near, appKeyPrefix: String? = nil,
        storage: WalletStorage = Keychain(service: WALLET_STORAGE_SERVICE),
@@ -72,6 +75,7 @@ public extension WalletAccount {
               storage: storage, authService: authService)
   }
 }
+#endif
 
 extension WalletAccount {
   /**
@@ -92,6 +96,7 @@ extension WalletAccount {
       return _authData.accountId ?? ""
   }
 
+#if canImport(UIKit)
   /**
    Redirects current page to the wallet authentication page.
    - Parameters:
@@ -152,7 +157,8 @@ extension WalletAccount {
     }
     return .value(())
   }
-
+#endif
+    
   private func _moveKeyFromTempToPermanent(accountId: String, publicKey: String) throws -> Promise<Void> {
     let pendingAccountId = PENDING_ACCESS_KEY_PREFIX + publicKey
     guard let keyPair = try await(_keyStore.getKey(networkId: _networkId,
