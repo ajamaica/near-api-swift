@@ -1,0 +1,61 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AwaitKit",
+        "repositoryURL": "https://github.com/yannickl/AwaitKit.git",
+        "state": {
+          "branch": null,
+          "revision": "743fbf22caa2813436e634fd7bf1fb0ff13751b9",
+          "version": "5.2.0"
+        }
+      },
+      {
+        "package": "Base58Swift",
+        "repositoryURL": "https://github.com/keefertaylor/Base58Swift.git",
+        "state": {
+          "branch": null,
+          "revision": "1c13ea6b07f1584660526f8bde3d4cc150e91acd",
+          "version": "2.1.14"
+        }
+      },
+      {
+        "package": "BigInt",
+        "repositoryURL": "https://github.com/attaswift/BigInt.git",
+        "state": {
+          "branch": null,
+          "revision": "889a1ecacd73ccc189c5cb29288048f186c44ed9",
+          "version": "5.2.1"
+        }
+      },
+      {
+        "package": "KeychainAccess",
+        "repositoryURL": "https://github.com/kishikawakatsumi/KeychainAccess.git",
+        "state": {
+          "branch": null,
+          "revision": "84e546727d66f1adc5439debad16270d0fdd04e7",
+          "version": "4.2.2"
+        }
+      },
+      {
+        "package": "PromiseKit",
+        "repositoryURL": "https://github.com/mxcl/PromiseKit.git",
+        "state": {
+          "branch": null,
+          "revision": "aea48ea1855f5d82e2dffa6027afce3aab8f3dd7",
+          "version": "6.13.3"
+        }
+      },
+      {
+        "package": "TweetNacl",
+        "repositoryURL": "https://github.com/bitmark-inc/tweetnacl-swiftwrap.git",
+        "state": {
+          "branch": null,
+          "revision": "d1552db4d907f2c5cb3d1bf1336496b2e16c8ecf",
+          "version": "1.0.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
