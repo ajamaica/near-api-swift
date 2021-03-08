@@ -23,7 +23,11 @@ let package = Package(
                                       "Base58Swift",
                                       "TweetNacl"
                       ],
-                      path: "nearclientios/Sources")
+                      path: "nearclientios/Sources"),
+              .testTarget(
+                  name: "NearTests",
+                  dependencies: ["nearclientios"],
+                  path: "nearclientios/Tests"),
     ],
     swiftLanguageVersions: [.v5]
 )
